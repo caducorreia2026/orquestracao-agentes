@@ -1,0 +1,10 @@
+# Nunca subir o token
+.env
+
+# Gerados ao correr
+logs/
+__pycache__/
+.pytest_cache/
+*.pyc
+.venv/
+venv/
