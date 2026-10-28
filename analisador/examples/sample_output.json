@@ -1,0 +1,31 @@
+{
+  "agent": "analisador",
+  "timestamp": "2026-10-26T14:23:00+00:00",
+  "repo_path": "/home/user/projeto-demo",
+  "status": "failed",
+  "summary": {
+    "total": 3,
+    "passed": 2,
+    "failed": 1,
+    "errors": 0,
+    "skipped": 0,
+    "duration_seconds": 0.05
+  },
+  "failures": [
+    {
+      "test_id": "tests/test_calc.py::test_subtract_fails",
+      "file": "tests/test_calc.py",
+      "test_name": "test_subtract_fails",
+      "line": 5,
+      "error_type": "AssertionError",
+      "error_message": "assert (2 - 2) == 5",
+      "traceback": "def test_subtract_fails():\n    assert 2 - 2 == 5\nE       assert (2 - 2) == 5\nE        +  where 2 - 2 = 0",
+      "reproduction_steps": [
+        "cd /home/user/projeto-demo",
+        "pytest tests/test_calc.py::test_subtract_fails -v --tb=long"
+      ]
+    }
+  ],
+  "raw_output": "...",
+  "error": null
+}
